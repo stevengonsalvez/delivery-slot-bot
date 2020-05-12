@@ -20,6 +20,7 @@ function getBrowser() {
     // @ts-ignore
     product: config.browser_product,
   });
+  return puppeteer.launch({headless: false, slowMo: 100});
 }
 
 /**
